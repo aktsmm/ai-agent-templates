@@ -2,6 +2,7 @@
 
 > Production-ready, YAML-configurable AI agent templates powered by [CrewAI](https://github.com/crewAIInc/crewAI). Clone, customize, deploy — no ML expertise required.
 
+[![CI](https://github.com/aktsmm/ai-agent-templates/actions/workflows/ci.yml/badge.svg)](https://github.com/aktsmm/ai-agent-templates/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
