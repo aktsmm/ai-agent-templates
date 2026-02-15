@@ -25,8 +25,14 @@ def search_onboarding_guide(query: str) -> str:
         content = file.read_text(encoding="utf-8")
         sections = content.split("\n### ")
         for section in sections:
-            if query.lower() in section.lower():
-                results.append(section.strip()[:800])
+            lower_section = section.lower()
+            query_lower = query.lower()
+            if query_lower in lower_section:
+                idx = lower_section.index(query_lower)
+                start = max(0, idx - 200)
+                end = min(len(section), idx + 600)
+                snippet = section[start:end].strip()
+                results.append(snippet[:800])
 
     if results:
         return "\n\n---\n\n".join(results[:10])
