@@ -27,22 +27,22 @@ Sales Request → Classifier Agent → [Lead Scorer / Company Researcher / Email
 
 ### Agent Roles
 
-| Agent                  | Role                                          | Tools                                    |
-| ---------------------- | --------------------------------------------- | ---------------------------------------- |
-| **Classifier**         | Routes requests to the right specialist       | —                                        |
-| **Lead Scorer**        | Scores leads using BANT framework (0-100)     | `search_lead_database`, `lookup_company` |
+| Agent                  | Role                                           | Tools                                    |
+| ---------------------- | ---------------------------------------------- | ---------------------------------------- |
+| **Classifier**         | Routes requests to the right specialist        | —                                        |
+| **Lead Scorer**        | Scores leads using BANT framework (0-100)      | `search_lead_database`, `lookup_company` |
 | **Company Researcher** | Provides company intelligence & talking points | `search_lead_database`, `lookup_company` |
-| **Email Composer**     | Writes personalized sales emails              | `search_lead_database`, `lookup_company` |
-| **Objection Handler**  | Prepares data-backed objection responses      | `search_lead_database`                   |
+| **Email Composer**     | Writes personalized sales emails               | `search_lead_database`, `lookup_company` |
+| **Objection Handler**  | Prepares data-backed objection responses       | `search_lead_database`                   |
 
 ### Categories
 
-| Category              | Trigger Examples                                                |
-| --------------------- | --------------------------------------------------------------- |
-| `lead_scoring`        | "Score TechFlow Solutions", "Qualify this prospect"             |
-| `company_research`    | "Research MediCore Health", "Find decision-makers at GlobalMart" |
-| `email_outreach`      | "Write a cold email to Sarah Chen", "Draft a follow-up"        |
-| `objection_handling`  | "They said pricing is too high", "Handle 'we use a competitor'" |
+| Category             | Trigger Examples                                                 |
+| -------------------- | ---------------------------------------------------------------- |
+| `lead_scoring`       | "Score TechFlow Solutions", "Qualify this prospect"              |
+| `company_research`   | "Research MediCore Health", "Find decision-makers at GlobalMart" |
+| `email_outreach`     | "Write a cold email to Sarah Chen", "Draft a follow-up"          |
+| `objection_handling` | "They said pricing is too high", "Handle 'we use a competitor'"  |
 
 ## Quick Start
 

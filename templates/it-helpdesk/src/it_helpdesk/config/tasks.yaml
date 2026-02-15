@@ -1,0 +1,82 @@
+classify_request:
+  description: >
+    Analyze the following IT support request and classify it into exactly
+    one category. Consider the primary issue the employee needs help with.
+
+    Employee request: "{query}"
+
+    Categories:
+    - password_reset: Password changes, account lockouts, MFA setup/issues,
+      access permission requests, SSO problems
+    - software_issue: Software installation, application crashes, update
+      failures, licensing errors, configuration problems
+    - network_issue: Internet connectivity, VPN connection, Wi-Fi problems,
+      DNS resolution, firewall/proxy issues
+    - hardware_issue: Laptop/desktop problems, monitor issues, printer setup,
+      peripheral devices, docking station, equipment requests
+  expected_output: >
+    Respond with exactly one word: password_reset, software_issue,
+    network_issue, or hardware_issue
+
+reset_password:
+  description: >
+    Help the employee with their password or account access issue.
+    Search the knowledge base for relevant procedures and provide
+    clear step-by-step instructions.
+
+    Employee request: "{query}"
+  expected_output: >
+    A helpful response in this format:
+    **Issue Type**: [Password Reset / Account Lockout / MFA Setup / Access Request]
+    **Resolution Steps**:
+    1. [Step-by-step instructions]
+    **Security Notes**: [Password requirements, MFA recommendations]
+    **Self-Service Option**: [Link or instructions for self-service if available]
+    **Escalation**: [When to contact IT admin directly]
+
+troubleshoot_software:
+  description: >
+    Diagnose and provide a resolution for the employee's software issue.
+    Search the knowledge base for known issues and workarounds.
+
+    Employee request: "{query}"
+  expected_output: >
+    A troubleshooting response in this format:
+    **Application**: [Software name and version if known]
+    **Diagnosis**: [Likely cause of the issue]
+    **Resolution Steps**:
+    1. [Step-by-step fix instructions]
+    **Workaround**: [Temporary workaround if available]
+    **Prevention**: [How to prevent this issue in the future]
+    **Escalation**: [When to escalate to vendor support or Level 2]
+
+diagnose_network:
+  description: >
+    Diagnose the employee's network connectivity issue and provide
+    troubleshooting steps. Check system status for any known outages.
+
+    Employee request: "{query}"
+  expected_output: >
+    A network diagnosis response in this format:
+    **Issue Type**: [VPN / Wi-Fi / DNS / Firewall / General Connectivity]
+    **System Status**: [Check if any known outages affect this issue]
+    **Diagnostic Steps**:
+    1. [Step-by-step diagnostic commands and checks]
+    **Resolution**: [Fix instructions based on diagnosis]
+    **Escalation**: [When this needs network engineering team involvement]
+
+handle_hardware:
+  description: >
+    Handle the employee's hardware issue by providing diagnostics,
+    troubleshooting steps, or initiating a repair/replacement process.
+
+    Employee request: "{query}"
+  expected_output: >
+    A hardware support response in this format:
+    **Device**: [Device type and model if known]
+    **Diagnosis**: [Likely hardware issue]
+    **Troubleshooting Steps**:
+    1. [Remote diagnostic steps]
+    **Action Required**: [Self-fix / On-site repair / Warranty replacement / New equipment]
+    **Ticket Reference**: [If a repair ticket is needed, provide next steps]
+    **Temporary Solution**: [Loaner equipment or workaround if available]
