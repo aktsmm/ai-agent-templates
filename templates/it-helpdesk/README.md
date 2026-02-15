@@ -4,22 +4,22 @@
 
 ## Features
 
-| Category         | What it does                                                         |
-| ---------------- | -------------------------------------------------------------------- |
-| 🔑 Password Reset | Reset passwords, unlock accounts, configure MFA, manage access      |
-| 💿 Software Issue  | Troubleshoot installs, crashes, updates, licensing, configuration   |
-| 🌐 Network Issue   | Diagnose VPN, Wi-Fi, DNS, firewall, and connectivity problems       |
-| 🖨️ Hardware Issue  | Handle laptop, monitor, printer, and peripheral issues              |
+| Category          | What it does                                                      |
+| ----------------- | ----------------------------------------------------------------- |
+| 🔑 Password Reset | Reset passwords, unlock accounts, configure MFA, manage access    |
+| 💿 Software Issue | Troubleshoot installs, crashes, updates, licensing, configuration |
+| 🌐 Network Issue  | Diagnose VPN, Wi-Fi, DNS, firewall, and connectivity problems     |
+| 🖨️ Hardware Issue | Handle laptop, monitor, printer, and peripheral issues            |
 
 ## Agents
 
-| Agent                    | Role                                | Tools                                  |
-| ------------------------ | ----------------------------------- | -------------------------------------- |
-| Classifier               | Routes requests to specialists      | —                                      |
-| Password Reset           | IAM & credential management         | Knowledge Base, Ticket Lookup          |
-| Software Troubleshooter  | Software diagnosis & resolution     | Knowledge Base, Ticket Lookup          |
-| Network Support          | Network connectivity diagnosis      | Knowledge Base, System Status          |
-| Hardware Support         | Hardware diagnostics & replacement  | Knowledge Base, Ticket Lookup          |
+| Agent                   | Role                               | Tools                         |
+| ----------------------- | ---------------------------------- | ----------------------------- |
+| Classifier              | Routes requests to specialists     | —                             |
+| Password Reset          | IAM & credential management        | Knowledge Base, Ticket Lookup |
+| Software Troubleshooter | Software diagnosis & resolution    | Knowledge Base, Ticket Lookup |
+| Network Support         | Network connectivity diagnosis     | Knowledge Base, System Status |
+| Hardware Support        | Hardware diagnostics & replacement | Knowledge Base, Ticket Lookup |
 
 ## Quick Start
 

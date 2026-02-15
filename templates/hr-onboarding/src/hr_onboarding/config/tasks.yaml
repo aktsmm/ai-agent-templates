@@ -1,0 +1,90 @@
+classify_request:
+  description: >
+    Analyze the following HR onboarding request and classify it into exactly
+    one category. Consider the primary need of the new hire or HR team member.
+
+    Request: "{query}"
+
+    Categories:
+    - document_collection: Employment contracts, tax forms (W-4, I-9), ID
+      verification, bank details for payroll, benefits enrollment, emergency
+      contacts, background check status
+    - it_setup: Laptop/hardware provisioning, email account creation, software
+      licenses, VPN/remote access, badge/keycard, system permissions, printer
+      setup
+    - training_schedule: Company orientation, compliance training (security,
+      harassment prevention, data privacy), role-specific training, e-learning
+      modules, 30/60/90-day plans
+    - buddy_match: Mentor/buddy assignment, team introductions, welcome events,
+      department tours, social integration, cultural onboarding
+  expected_output: >
+    Respond with exactly one word: document_collection, it_setup,
+    training_schedule, or buddy_match
+
+collect_documents:
+  description: >
+    Help the new hire or HR team member with document collection and
+    verification. Search the onboarding guide for relevant procedures
+    and provide clear instructions with deadlines.
+
+    Request: "{query}"
+  expected_output: >
+    A helpful response in this format:
+    **Document Type**: [Contract / Tax Form / ID Verification / Bank Details / Benefits]
+    **Required Actions**:
+    1. [Step-by-step instructions]
+    **Deadline**: [When this must be completed]
+    **Common Issues**: [Frequent mistakes and how to avoid them]
+    **Status Check**: [How to verify submission was received]
+    **Help Desk**: [Who to contact for document-related questions]
+
+coordinate_it_setup:
+  description: >
+    Coordinate IT setup for the new hire. Check the onboarding guide
+    for standard provisioning procedures and provide a clear timeline.
+
+    Request: "{query}"
+  expected_output: >
+    An IT setup response in this format:
+    **Setup Item**: [Laptop / Email / Software / VPN / Badge / Permissions]
+    **Current Status**: [Ordered / In Progress / Ready / Completed]
+    **Setup Steps**:
+    1. [Step-by-step instructions or timeline]
+    **Standard Equipment**: [What the new hire will receive]
+    **First-Day IT Checklist**: [What to verify on day one]
+    **IT Support**: [Help desk contact for setup issues]
+
+schedule_training:
+  description: >
+    Schedule and coordinate training for the new hire. Search the
+    onboarding guide for available training programs and create a
+    structured plan.
+
+    Request: "{query}"
+  expected_output: >
+    A training schedule response in this format:
+    **Training Category**: [Orientation / Compliance / Role-Specific / E-Learning]
+    **Recommended Schedule**:
+    - Week 1: [Sessions and topics]
+    - Week 2-4: [Sessions and topics]
+    - Month 2-3: [Sessions and topics]
+    **Mandatory Training**: [Required courses with deadlines]
+    **Optional Training**: [Recommended additional courses]
+    **Completion Tracking**: [How progress is monitored]
+
+match_buddy:
+  description: >
+    Match the new hire with an appropriate onboarding buddy and
+    coordinate team introductions. Search the onboarding guide for
+    buddy program details and matching criteria.
+
+    Request: "{query}"
+  expected_output: >
+    A buddy matching response in this format:
+    **Program Overview**: [How the buddy program works]
+    **Matching Criteria**: [Department, role, location, interests]
+    **Buddy Responsibilities**: [What the buddy will help with]
+    **Introduction Plan**:
+    1. [Scheduled meet-and-greet activities]
+    **Welcome Events**: [Upcoming team/company events]
+    **Feedback**: [How to provide feedback on the buddy experience]
