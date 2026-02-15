@@ -50,14 +50,14 @@ smooth and welcoming experience for every new team member.
 
 **Standard Equipment Package**
 
-| Item | Model | Specification |
-|------|-------|---------------|
-| Laptop | ThinkPad T14 Gen 5 | 16GB RAM, 512GB SSD |
-| Monitor | Dell U2723QE | 27" 4K USB-C |
-| Headset | Jabra Evolve2 55 | Bluetooth/USB-C |
-| Keyboard | Logitech MX Keys | Wireless |
-| Mouse | Logitech MX Master 3S | Wireless |
-| Docking Station | Lenovo ThinkPad USB-C | 3x Display support |
+| Item            | Model                 | Specification       |
+| --------------- | --------------------- | ------------------- |
+| Laptop          | ThinkPad T14 Gen 5    | 16GB RAM, 512GB SSD |
+| Monitor         | Dell U2723QE          | 27" 4K USB-C        |
+| Headset         | Jabra Evolve2 55      | Bluetooth/USB-C     |
+| Keyboard        | Logitech MX Keys      | Wireless            |
+| Mouse           | Logitech MX Master 3S | Wireless            |
+| Docking Station | Lenovo ThinkPad USB-C | 3x Display support  |
 
 **IT Account Setup**
 
@@ -89,13 +89,13 @@ smooth and welcoming experience for every new team member.
 
 **IT Setup Timeline**
 
-| Timeline | Action |
-|----------|--------|
-| T-5 days | Laptop ordered and configured |
-| T-2 days | Email/M365 account created |
-| T-1 day | VPN configured, software installed |
-| Day 1 | Badge photo, credential handoff |
-| Day 2 | Access permissions verified |
+| Timeline | Action                             |
+| -------- | ---------------------------------- |
+| T-5 days | Laptop ordered and configured      |
+| T-2 days | Email/M365 account created         |
+| T-1 day  | VPN configured, software installed |
+| Day 1    | Badge photo, credential handoff    |
+| Day 2    | Access permissions verified        |
 
 ### Training & Development Programs
 
@@ -138,14 +138,14 @@ smooth and welcoming experience for every new team member.
 
 **Mandatory E-Learning Modules**
 
-| Module | Duration | Deadline |
-|--------|----------|----------|
-| Security Awareness | 45 min | Day 2 |
-| Harassment Prevention | 60 min | Day 2 |
-| Data Privacy (GDPR/CCPA) | 45 min | Day 2 |
-| Insider Trading Policy | 30 min | Week 1 |
-| Code of Conduct | 30 min | Week 1 |
-| Expense Policy | 20 min | Week 2 |
+| Module                   | Duration | Deadline |
+| ------------------------ | -------- | -------- |
+| Security Awareness       | 45 min   | Day 2    |
+| Harassment Prevention    | 60 min   | Day 2    |
+| Data Privacy (GDPR/CCPA) | 45 min   | Day 2    |
+| Insider Trading Policy   | 30 min   | Week 1   |
+| Code of Conduct          | 30 min   | Week 1   |
+| Expense Policy           | 20 min   | Week 2   |
 
 ### Buddy Program & Social Integration
 
@@ -174,13 +174,13 @@ new hire's manager; they are a peer who helps with day-to-day questions.
 
 **Welcome Events Calendar**
 
-| Event | Frequency | Description |
-|-------|-----------|-------------|
-| Welcome Lunch | Day 1 | Team lunch with new hire |
-| Coffee Roulette | Weekly | Random 1:1 coffee with a colleague |
-| New Hire Mixer | Monthly | Social event for all new hires |
-| Department Town Hall | Monthly | Department updates and Q&A |
-| Company All-Hands | Quarterly | Company-wide meeting |
+| Event                | Frequency | Description                        |
+| -------------------- | --------- | ---------------------------------- |
+| Welcome Lunch        | Day 1     | Team lunch with new hire           |
+| Coffee Roulette      | Weekly    | Random 1:1 coffee with a colleague |
+| New Hire Mixer       | Monthly   | Social event for all new hires     |
+| Department Town Hall | Monthly   | Department updates and Q&A         |
+| Company All-Hands    | Quarterly | Company-wide meeting               |
 
 **Team Introduction Checklist**
 
@@ -194,13 +194,13 @@ new hire's manager; they are a peer who helps with day-to-day questions.
 
 **HR Team Contacts**
 
-| Role | Contact | Hours |
-|------|---------|-------|
-| HR Help Desk | hr-help@company.com | Mon-Fri 9:00-18:00 JST |
-| Benefits Questions | benefits@company.com | Mon-Fri 9:00-17:00 JST |
-| Payroll Support | payroll@company.com | Mon-Fri 10:00-16:00 JST |
-| IT Service Desk | it-help@company.com | Mon-Fri 8:00-20:00 JST |
-| Buddy Program | buddy-program@company.com | Mon-Fri 9:00-18:00 JST |
+| Role               | Contact                   | Hours                   |
+| ------------------ | ------------------------- | ----------------------- |
+| HR Help Desk       | hr-help@company.com       | Mon-Fri 9:00-18:00 JST  |
+| Benefits Questions | benefits@company.com      | Mon-Fri 9:00-17:00 JST  |
+| Payroll Support    | payroll@company.com       | Mon-Fri 10:00-16:00 JST |
+| IT Service Desk    | it-help@company.com       | Mon-Fri 8:00-20:00 JST  |
+| Buddy Program      | buddy-program@company.com | Mon-Fri 9:00-18:00 JST  |
 
 **Self-Service Resources**
 
@@ -214,15 +214,15 @@ new hire's manager; they are a peer who helps with day-to-day questions.
 
 **Complete Onboarding Timeline**
 
-| Phase | Timeline | Key Activities | Owner |
-|-------|----------|---------------|-------|
-| Pre-boarding | T-30 to T-1 days | Documents, IT setup, buddy assignment | HR + IT |
-| Day 1 | Start date | Orientation, badge, welcome lunch | HR |
-| Week 1 | Days 1-5 | Compliance training, team intros | HR + Manager |
-| Week 2-4 | Days 6-20 | Role training, first 1:1 | Manager |
-| Month 2 | Days 21-40 | Cross-team projects, 60-day check-in | Manager + HR |
-| Month 3 | Days 41-60 | Integration, 90-day review | Manager + HR |
-| Graduation | Day 90 | Onboarding complete, buddy graduation | HR |
+| Phase        | Timeline         | Key Activities                        | Owner        |
+| ------------ | ---------------- | ------------------------------------- | ------------ |
+| Pre-boarding | T-30 to T-1 days | Documents, IT setup, buddy assignment | HR + IT      |
+| Day 1        | Start date       | Orientation, badge, welcome lunch     | HR           |
+| Week 1       | Days 1-5         | Compliance training, team intros      | HR + Manager |
+| Week 2-4     | Days 6-20        | Role training, first 1:1              | Manager      |
+| Month 2      | Days 21-40       | Cross-team projects, 60-day check-in  | Manager + HR |
+| Month 3      | Days 41-60       | Integration, 90-day review            | Manager + HR |
+| Graduation   | Day 90           | Onboarding complete, buddy graduation | HR           |
 
 **Success Metrics**
 

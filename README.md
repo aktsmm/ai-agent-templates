@@ -6,7 +6,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-473%20passed-brightgreen.svg)](#testing)
+[![Tests](https://img.shields.io/badge/tests-585%20passed-brightgreen.svg)](#testing)
 
 ## Why?
 
@@ -16,7 +16,7 @@ AI agent frameworks are powerful — but going from "hello world" to production 
 - **YAML configuration** for agents & tasks (no code changes to customize)
 - **Multiple LLM support** (OpenAI, Azure OpenAI, Anthropic, Ollama)
 - **CLI with 3 modes** (interactive, single query, batch)
-- **Comprehensive test suites** (473 tests, all mocked — no API keys needed)
+- **Comprehensive test suites** (585 tests, all mocked — no API keys needed)
 - **Setup scripts** for instant onboarding
 
 ## Templates
@@ -29,7 +29,8 @@ AI agent frameworks are powerful — but going from "hello world" to production 
 | [⚖️ Legal Document Analyzer](templates/legal-document-analyzer/) | Extract clauses, analyze risks, summarize contracts, compare documents               | 5 (Classifier → Clause / Risk / Summary / Compare)        | 66    |
 | [📊 Sales Lead Qualifier](templates/sales-lead-qualifier/)       | Score leads (BANT), research companies, compose outreach emails, handle objections   | 5 (Classifier → Scorer / Researcher / Email / Objection)  | 73    |
 | [🖥️ IT Helpdesk](templates/it-helpdesk/)                         | Reset passwords, troubleshoot software, diagnose network, handle hardware issues     | 5 (Classifier → Password / Software / Network / Hardware) | 92    |
-| [👥 HR Onboarding](templates/hr-onboarding/)                     | Collect documents, set up IT accounts, schedule training, match buddies               | 5 (Classifier → Document / IT Setup / Training / Buddy)   | 104   |
+| [👥 HR Onboarding](templates/hr-onboarding/)                     | Collect documents, set up IT accounts, schedule training, match buddies              | 5 (Classifier → Document / IT Setup / Training / Buddy)   | 104   |
+| [📝 Content Marketing](templates/content-marketing/)             | Plan content strategy, write blogs, create social media, analyze SEO                 | 5 (Classifier → Strategist / Writer / Social / SEO)       | 112   |
 
 ## Quick Start
 

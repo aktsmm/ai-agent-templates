@@ -1,0 +1,98 @@
+classify_request:
+  description: >
+    Analyze the following content marketing request and classify it into exactly
+    one category. Consider the primary goal the user wants to accomplish.
+
+    User request: "{query}"
+
+    Categories:
+    - content_strategy: Content planning, editorial calendars, audience research,
+      content pillars, content audits, distribution plans, performance analysis
+    - blog_writing: Blog posts, articles, how-to guides, thought leadership,
+      case studies, listicles, product reviews, technical writing
+    - social_media: Social media posts, captions, hashtag strategies, platform
+      content (LinkedIn/Twitter/Instagram/Facebook), engagement tactics
+    - seo_analysis: Keyword research, on-page SEO, meta tags, search rankings,
+      competitor analysis, content gap analysis, backlink strategies
+  expected_output: >
+    Respond with exactly one word: content_strategy, blog_writing,
+    social_media, or seo_analysis
+
+plan_content_strategy:
+  description: >
+    Develop a content strategy recommendation based on the user's request.
+    Search the content guide for best practices and provide actionable
+    recommendations aligned with their business goals.
+
+    User request: "{query}"
+  expected_output: >
+    A strategic recommendation in this format:
+    **Objective**: [What the content strategy aims to achieve]
+    **Target Audience**: [Primary and secondary audience segments]
+    **Content Pillars**: [3-5 core content themes]
+    **Editorial Calendar**:
+    - Week 1: [Content plan]
+    - Week 2: [Content plan]
+    - Week 3: [Content plan]
+    - Week 4: [Content plan]
+    **Distribution Channels**: [Where to publish and promote]
+    **KPIs**: [Key metrics to track success]
+
+write_blog_post:
+  description: >
+    Create a blog post outline or draft based on the user's request.
+    Search the content guide for writing best practices and SEO guidelines.
+
+    User request: "{query}"
+  expected_output: >
+    A blog post plan in this format:
+    **Title**: [SEO-optimized headline]
+    **Target Keyword**: [Primary keyword to rank for]
+    **Word Count**: [Recommended length]
+    **Outline**:
+    1. Introduction — [Hook and thesis]
+    2. [Section heading] — [Key points]
+    3. [Section heading] — [Key points]
+    4. [Section heading] — [Key points]
+    5. Conclusion — [Summary and CTA]
+    **Meta Description**: [155-character search snippet]
+    **Internal Links**: [Related content to link to]
+    **CTA**: [Call to action for readers]
+
+create_social_content:
+  description: >
+    Create social media content tailored to the appropriate platform(s)
+    based on the user's request. Follow platform-specific best practices.
+
+    User request: "{query}"
+  expected_output: >
+    Social media content in this format:
+    **Platform**: [Target platform(s)]
+    **Post Type**: [Text / Image / Video / Carousel / Story]
+    **Caption**: [Platform-optimized caption text]
+    **Hashtags**: [Relevant hashtags, 5-15 depending on platform]
+    **Best Posting Time**: [Recommended day and time]
+    **Visual Suggestion**: [Image or graphic concept]
+    **Engagement Hook**: [Question or CTA to drive interaction]
+    **Variations**: [Alternative versions for A/B testing]
+
+analyze_seo:
+  description: >
+    Provide SEO analysis and recommendations based on the user's request.
+    Search the content guide for SEO best practices and provide actionable
+    insights to improve search visibility.
+
+    User request: "{query}"
+  expected_output: >
+    An SEO analysis in this format:
+    **Target Keywords**: [Primary and secondary keywords]
+    **Search Intent**: [Informational / Navigational / Commercial / Transactional]
+    **Current Ranking Assessment**: [Estimated competitive difficulty]
+    **On-Page Recommendations**:
+    1. [Title tag optimization]
+    2. [Meta description]
+    3. [Header structure (H1/H2/H3)]
+    4. [Content optimization tips]
+    **Technical SEO Notes**: [Page speed, mobile, schema markup]
+    **Content Gap Opportunities**: [Topics competitors rank for that you don't]
+    **Backlink Strategy**: [Approaches to earn quality links]

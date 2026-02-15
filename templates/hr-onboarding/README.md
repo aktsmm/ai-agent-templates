@@ -6,13 +6,13 @@ AI-powered HR onboarding assistant that guides new hires through the complete on
 
 The assistant classifies onboarding requests and routes them to the appropriate specialist:
 
-| Agent | Handles |
-|-------|---------|
-| **Classifier** | Routes requests to the right specialist |
-| **Document Collector** | Employment contracts, tax forms, ID verification, bank details, benefits |
-| **IT Setup Coordinator** | Laptop provisioning, email accounts, VPN, badges, access permissions |
-| **Training Scheduler** | Orientation, compliance training, role-specific courses, 30/60/90-day plans |
-| **Buddy Matcher** | Mentor assignment, team introductions, welcome events, social integration |
+| Agent                    | Handles                                                                     |
+| ------------------------ | --------------------------------------------------------------------------- |
+| **Classifier**           | Routes requests to the right specialist                                     |
+| **Document Collector**   | Employment contracts, tax forms, ID verification, bank details, benefits    |
+| **IT Setup Coordinator** | Laptop provisioning, email accounts, VPN, badges, access permissions        |
+| **Training Scheduler**   | Orientation, compliance training, role-specific courses, 30/60/90-day plans |
+| **Buddy Matcher**        | Mentor assignment, team introductions, welcome events, social integration   |
 
 ## Quick Start
 
@@ -44,11 +44,11 @@ python -m hr_onboarding --file requests.txt
 
 ## Custom Tools
 
-| Tool | Description |
-|------|-------------|
+| Tool                      | Description                                                           |
+| ------------------------- | --------------------------------------------------------------------- |
 | `search_onboarding_guide` | Search the HR knowledge base for procedures, checklists, and policies |
-| `lookup_employee` | Look up a new hire's onboarding record and progress |
-| `check_onboarding_status` | Check the onboarding pipeline status by department |
+| `lookup_employee`         | Look up a new hire's onboarding record and progress                   |
+| `check_onboarding_status` | Check the onboarding pipeline status by department                    |
 
 ## Project Structure
 
@@ -83,6 +83,7 @@ All tests are mocked — no API keys or LLM calls needed.
 ## LLM Configuration
 
 Edit `.env` to use your preferred LLM provider. See `.env.example` for options:
+
 - OpenAI (default)
 - Azure OpenAI
 - Anthropic
