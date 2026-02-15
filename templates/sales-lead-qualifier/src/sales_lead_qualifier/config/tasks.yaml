@@ -1,0 +1,128 @@
+classify_request:
+  description: >
+    Analyze the following sales team request and classify it into exactly
+    one category. Consider what the sales representative is trying to accomplish.
+
+    Sales request: "{query}"
+
+    Categories:
+    - lead_scoring: Evaluating a prospect, qualifying a lead, BANT analysis,
+      scoring a company's fit, prioritizing pipeline opportunities
+    - company_research: Researching a company or prospect, gathering intel,
+      finding decision-makers, understanding industry landscape
+    - email_outreach: Writing sales emails, follow-ups, cold outreach,
+      introductions, meeting requests, re-engagement
+    - objection_handling: Handling prospect objections, pricing pushback,
+      competitor concerns, "not interested" responses, negotiation prep
+  expected_output: >
+    Respond with exactly one word: lead_scoring, company_research,
+    email_outreach, or objection_handling
+
+score_lead:
+  description: >
+    Evaluate and score the following sales lead using the BANT framework.
+    Search the lead database for any existing information about this
+    prospect or company. Consider all available data points.
+
+    Lead/Request: "{query}"
+
+    Score on these dimensions:
+    - Budget (0-25): Does the prospect have budget allocated?
+    - Authority (0-25): Are we talking to a decision-maker?
+    - Need (0-25): How strong is the pain point / use case fit?
+    - Timeline (0-25): Is there urgency or a defined purchase window?
+  expected_output: >
+    A lead qualification report in this format:
+    **Lead Score**: [0-100] — [Hot (80+) / Warm (50-79) / Cold (<50)]
+
+    **BANT Breakdown**:
+    - **Budget** [0-25]: [Score] — [Justification]
+    - **Authority** [0-25]: [Score] — [Justification]
+    - **Need** [0-25]: [Score] — [Justification]
+    - **Timeline** [0-25]: [Score] — [Justification]
+
+    **Key Signals**: [2-3 bullet points of notable indicators]
+    **Recommended Action**: [Specific next step for the sales rep]
+    **Priority**: [Immediate follow-up / Schedule next week / Nurture campaign / Disqualify]
+
+research_company:
+  description: >
+    Research the following company or prospect and provide a comprehensive
+    intelligence briefing for the sales team. Use the lead database to find
+    any existing information.
+
+    Research request: "{query}"
+  expected_output: >
+    A company research briefing in this format:
+    **Company Overview**:
+    - **Name**: [Company name]
+    - **Industry**: [Primary industry]
+    - **Size**: [Employee count and revenue if available]
+    - **Headquarters**: [Location]
+
+    **Key Decision-Makers**:
+    - [Name, Title, relevant background]
+
+    **Business Intelligence**:
+    - **Pain Points**: [2-3 likely challenges]
+    - **Technology Stack**: [Known tools/platforms, if available]
+    - **Recent Activity**: [News, funding, hiring, partnerships]
+    - **Competitive Landscape**: [Key competitors they face]
+
+    **Sales Angles**:
+    - [2-3 personalized talking points]
+    - **Recommended Approach**: [How to position the pitch]
+
+compose_email:
+  description: >
+    Compose a personalized sales email based on the following request.
+    Use information from the lead database to personalize the message.
+    Follow best practices for B2B sales email copywriting.
+
+    Email request: "{query}"
+  expected_output: >
+    A ready-to-send email in this format:
+    **Subject Line**: [Compelling subject line, under 60 characters]
+    **Preview Text**: [First line visible in inbox, under 90 characters]
+
+    ---
+
+    [Full email body — 150-250 words max]
+    - Personalized opening (reference something specific about the prospect)
+    - Value proposition (1-2 sentences, benefit-focused)
+    - Social proof or data point (optional but recommended)
+    - Clear CTA (specific ask, easy to say yes to)
+    - Professional signature
+
+    ---
+
+    **Alternative Subject Lines**: [2 more options]
+    **Send Timing**: [Recommended day/time]
+    **Follow-up Strategy**: [When and how to follow up if no reply]
+
+handle_objection:
+  description: >
+    Prepare responses to the following sales objection or concern.
+    Consider the prospect's perspective and provide multiple response
+    strategies.
+
+    Objection/Concern: "{query}"
+  expected_output: >
+    An objection handling playbook in this format:
+    **Objection Category**: [Price / Competitor / Timing / Status Quo / Authority / Other]
+    **Severity**: [Low / Medium / High — how deal-threatening is this?]
+
+    **Response Option 1 — Direct**:
+    [Straightforward response addressing the concern head-on]
+
+    **Response Option 2 — Consultative**:
+    [Question-based response to understand the root cause]
+
+    **Response Option 3 — Value Reframe**:
+    [Reframing the objection as a reason to move forward]
+
+    **Supporting Data**:
+    - [Relevant stat, case study, or proof point]
+
+    **What NOT to Say**: [Common mistakes to avoid]
+    **Suggested Follow-Up**: [Next step after delivering the response]

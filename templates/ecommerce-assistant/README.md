@@ -27,21 +27,21 @@ Customer Inquiry → Classifier Agent → [Product Search / Order Tracking / Ret
 
 ### Agent Roles
 
-| Agent | Role | Tools |
-|-------|------|-------|
-| **Classifier** | Routes inquiries to the right specialist | — |
+| Agent              | Role                                                  | Tools                    |
+| ------------------ | ----------------------------------------------------- | ------------------------ |
+| **Classifier**     | Routes inquiries to the right specialist              | —                        |
 | **Product Search** | Finds products, compares options, checks availability | `search_product_catalog` |
-| **Order Tracker** | Checks order status, shipping, delivery estimates | `lookup_order` |
-| **Return Handler** | Processes returns/refunds, checks eligibility | `search_product_catalog` |
-| **Recommender** | Suggests products based on preferences | `search_product_catalog` |
+| **Order Tracker**  | Checks order status, shipping, delivery estimates     | `lookup_order`           |
+| **Return Handler** | Processes returns/refunds, checks eligibility         | `search_product_catalog` |
+| **Recommender**    | Suggests products based on preferences                | `search_product_catalog` |
 
 ### Categories
 
-| Category | Trigger Examples |
-|----------|-----------------|
-| `product_search` | "Do you have wireless headphones?", "Compare speakers" |
-| `order_tracking` | "Where is my order?", "Tracking number for ORD-12345" |
-| `return_refund` | "I want to return this item", "Refund request" |
+| Category         | Trigger Examples                                         |
+| ---------------- | -------------------------------------------------------- |
+| `product_search` | "Do you have wireless headphones?", "Compare speakers"   |
+| `order_tracking` | "Where is my order?", "Tracking number for ORD-12345"    |
+| `return_refund`  | "I want to return this item", "Refund request"           |
 | `recommendation` | "What laptop do you recommend?", "Gift ideas under $100" |
 
 ## Quick Start
@@ -103,13 +103,13 @@ ecommerce-assistant/
 
 ### Environment Variables
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `MODEL` | `gpt-4o` | Main LLM for specialist agents |
+| Variable           | Default       | Description                      |
+| ------------------ | ------------- | -------------------------------- |
+| `MODEL`            | `gpt-4o`      | Main LLM for specialist agents   |
 | `CLASSIFIER_MODEL` | `gpt-4o-mini` | Cheaper model for classification |
-| `OPENAI_API_KEY` | — | Your OpenAI API key |
-| `VERBOSE` | `true` | Show agent reasoning in console |
-| `LOG_LEVEL` | `INFO` | Logging verbosity |
+| `OPENAI_API_KEY`   | —             | Your OpenAI API key              |
+| `VERBOSE`          | `true`        | Show agent reasoning in console  |
+| `LOG_LEVEL`        | `INFO`        | Logging verbosity                |
 
 ### Customization
 
@@ -135,6 +135,7 @@ All tests are fully mocked — **no API keys or LLM calls required**.
 ### Connect to a Real Product Database
 
 Replace the keyword-based search in `tools/custom_tool.py` with:
+
 - **Elasticsearch** / **Algolia** for full-text product search
 - **PostgreSQL** / **MongoDB** for structured product queries
 - **Vector DB** (ChromaDB, Pinecone) for semantic product search
@@ -142,6 +143,7 @@ Replace the keyword-based search in `tools/custom_tool.py` with:
 ### Connect to a Real Order System
 
 Replace the sample data in `lookup_order` with:
+
 - **Shopify API** / **WooCommerce API**
 - **Your own order management REST API**
 - **Database queries** to your order table
