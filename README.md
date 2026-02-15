@@ -6,7 +6,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-76%20passed-brightgreen.svg)](#testing)
+[![Tests](https://img.shields.io/badge/tests-138%20passed-brightgreen.svg)](#testing)
 
 ## Why?
 
@@ -25,7 +25,7 @@ AI agent frameworks are powerful — but going from "hello world" to production 
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------ | ----- |
 | [🤖 Customer Support](templates/customer-support/)     | Classify inquiries, answer FAQs (RAG), create tickets, escalate urgent issues        | 4 (Classifier → FAQ / Ticket / Escalation) | 47    |
 | [💼 Subsidy Consultant](templates/subsidy-consultant/) | Match Japanese SME grants, draft applications, score proposals, summarize guidelines | 4 (Matcher / Writer / Scorer / Summarizer) | 29    |
-| 🛒 E-commerce Assistant                                | _Coming soon_                                                                        | —                                          | —     |
+| [🛒 E-commerce Assistant](templates/ecommerce-assistant/) | Search products, track orders, handle returns, recommend items                       | 5 (Classifier → Search / Order / Return / Recommend) | 62    |
 | ⚖️ Legal Document Analyzer                             | _Coming soon_                                                                        | —                                          | —     |
 | 📊 Sales Lead Qualifier                                | _Coming soon_                                                                        | —                                          | —     |
 
