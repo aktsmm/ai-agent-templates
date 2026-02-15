@@ -1,0 +1,90 @@
+classify_inquiry:
+  description: >
+    Analyze the following customer inquiry and classify it into exactly
+    one category. Consider what the customer is trying to accomplish.
+
+    Customer inquiry: "{query}"
+
+    Categories:
+    - product_search: Looking for products, checking prices, comparing items,
+      asking about availability or specifications
+    - order_tracking: Checking order status, shipping updates, delivery
+      estimates, tracking numbers
+    - return_refund: Requesting returns, exchanges, refunds, reporting
+      damaged or wrong items
+    - recommendation: Asking for product suggestions, gift ideas, alternatives,
+      "what should I buy" type questions
+  expected_output: >
+    Respond with exactly one word: product_search, order_tracking,
+    return_refund, or recommendation
+
+search_products:
+  description: >
+    Search the product catalog for items matching the customer's request.
+    Provide detailed information including price, features, availability,
+    and any current promotions.
+
+    Customer request: "{query}"
+  expected_output: >
+    A helpful response listing matching products in this format:
+    **Products Found**: [number of matches]
+
+    For each product:
+    - **Name**: [Product name]
+    - **Price**: [Price with currency]
+    - **Key Features**: [2-3 bullet points]
+    - **Availability**: [In Stock / Limited / Out of Stock]
+
+    End with a brief recommendation if multiple products match.
+
+track_order:
+  description: >
+    Look up the order information and provide a status update based on
+    the customer's inquiry. Include current status, location, and
+    estimated delivery.
+
+    Customer inquiry: "{query}"
+  expected_output: >
+    An order status update in this format:
+    **Order Status**: [Processing/Shipped/In Transit/Out for Delivery/Delivered]
+    **Current Location**: [City, Country or Warehouse]
+    **Estimated Delivery**: [Date or date range]
+    **Tracking Number**: [If available]
+    **Notes**: [Any delays, issues, or additional information]
+    **Next Steps**: [What the customer can do if needed]
+
+process_return:
+  description: >
+    Process the customer's return or refund request. Check eligibility
+    based on the return policy, provide clear instructions, and
+    estimate the refund timeline.
+
+    Customer request: "{query}"
+  expected_output: >
+    A return/refund response in this format:
+    **Eligibility**: [Eligible / Not Eligible / Needs Review]
+    **Return Policy**: [Brief summary of applicable policy]
+    **Return Instructions**:
+    1. [Step-by-step return process]
+    **Refund Method**: [Original payment / Store credit / Exchange]
+    **Estimated Timeline**: [Business days for refund processing]
+    **Return Shipping**: [Prepaid label / Customer pays / Free return]
+
+recommend_products:
+  description: >
+    Provide personalized product recommendations based on the customer's
+    preferences, needs, or context. Suggest 3-5 products with clear
+    reasoning for each recommendation.
+
+    Customer request: "{query}"
+  expected_output: >
+    Personalized recommendations in this format:
+    **Based on your request, here are my top picks:**
+
+    For each recommendation (3-5 items):
+    - **Name**: [Product name]
+    - **Price**: [Price with currency]
+    - **Why this fits**: [1-2 sentences explaining the match]
+    - **Best for**: [Use case or customer type]
+
+    **Also consider**: [1-2 complementary items or accessories]
