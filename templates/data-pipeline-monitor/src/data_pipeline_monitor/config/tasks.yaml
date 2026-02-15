@@ -1,0 +1,94 @@
+classify_request:
+  description: >
+    Analyze the following data pipeline monitoring request and classify it into
+    exactly one category. Consider the primary concern the operator needs help with.
+
+    Operator request: "{query}"
+
+    Categories:
+    - pipeline_health: Pipeline execution status, run history, latency, throughput,
+      scheduling issues, DAG failures, orchestration problems
+    - data_quality: Data completeness, freshness, schema drift, null rates,
+      duplicate detection, anomaly detection, validation failures
+    - alert_management: Alert configuration, notification routing, escalation
+      policies, severity levels, on-call schedules, incident management
+    - recovery: Recovery actions, retry strategies, rollback procedures, data
+      backfill, restart pipelines, failover, manual intervention
+  expected_output: >
+    Respond with exactly one word: pipeline_health, data_quality,
+    alert_management, or recovery
+
+check_pipeline:
+  description: >
+    Check the pipeline execution status and performance metrics for the
+    operator's request. Use the pipeline status tool to look up current
+    status and search the runbook for relevant operational procedures.
+
+    Operator request: "{query}"
+  expected_output: >
+    A detailed pipeline status report in this format:
+    **Pipeline**: [Pipeline ID and name]
+    **Current Status**: [Running / Completed / Failed / Delayed / Scheduled]
+    **Performance Metrics**:
+    - Last Run: [timestamp]
+    - Duration: [minutes]
+    - Rows Processed: [count]
+    - Error Count: [count]
+    **SLA Compliance**: [On track / At risk / Breached]
+    **Recommendations**: [Any actions needed]
+
+analyze_data_quality:
+  description: >
+    Analyze data quality metrics for the datasets mentioned in the operator's
+    request. Use the data metrics tool to retrieve quality indicators and
+    identify any issues that need attention.
+
+    Operator request: "{query}"
+  expected_output: >
+    A data quality analysis report in this format:
+    **Dataset**: [Dataset/table name]
+    **Quality Metrics**:
+    - Completeness: [percentage]
+    - Freshness: [last update timestamp]
+    - Null Rate: [percentage]
+    - Duplicate Rate: [percentage]
+    - Schema Drift: [Detected / None]
+    **Issues Found**: [List of quality issues]
+    **Impact Assessment**: [Downstream impact of identified issues]
+    **Recommendations**: [Validation rules or fixes to apply]
+
+manage_alerts:
+  description: >
+    Help the operator with alert configuration, routing, and escalation
+    management. Search the runbook for alert policies and provide guidance
+    on setting up effective monitoring alerts.
+
+    Operator request: "{query}"
+  expected_output: >
+    An alert management response in this format:
+    **Alert Type**: [Pipeline failure / Data quality / SLA breach / Custom]
+    **Severity**: [P1-Critical / P2-High / P3-Medium / P4-Low]
+    **Notification Channels**: [Slack / PagerDuty / Email / Teams]
+    **Escalation Policy**:
+    1. [First responder and SLA]
+    2. [Escalation path]
+    **Configuration Steps**: [How to set up or modify the alert]
+    **Best Practices**: [Tips for reducing noise and improving signal]
+
+advise_recovery:
+  description: >
+    Recommend recovery actions for the pipeline failure or issue described
+    by the operator. Search the runbook for recovery procedures and provide
+    a step-by-step remediation plan.
+
+    Operator request: "{query}"
+  expected_output: >
+    A recovery plan in this format:
+    **Failure Type**: [Connection error / Timeout / OOM / Schema mismatch / Permission denied]
+    **Root Cause Analysis**: [Likely cause of the failure]
+    **Recovery Strategy**: [Retry / Rollback / Manual intervention / Backfill]
+    **Recovery Steps**:
+    1. [Step-by-step remediation instructions]
+    **Risk Assessment**: [Potential risks of the recovery action]
+    **Prevention**: [How to prevent this failure in the future]
+    **Escalation**: [When to escalate to platform engineering]
