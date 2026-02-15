@@ -6,7 +6,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-138%20passed-brightgreen.svg)](#testing)
+[![Tests](https://img.shields.io/badge/tests-204%20passed-brightgreen.svg)](#testing)
 
 ## Why?
 
@@ -16,18 +16,18 @@ AI agent frameworks are powerful — but going from "hello world" to production 
 - **YAML configuration** for agents & tasks (no code changes to customize)
 - **Multiple LLM support** (OpenAI, Azure OpenAI, Anthropic, Ollama)
 - **CLI with 3 modes** (interactive, single query, batch)
-- **Comprehensive test suites** (76 tests, all mocked — no API keys needed)
+- **Comprehensive test suites** (204 tests, all mocked — no API keys needed)
 - **Setup scripts** for instant onboarding
 
 ## Templates
 
-| Template                                               | Description                                                                          | Agents                                     | Tests |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------ | ----- |
-| [🤖 Customer Support](templates/customer-support/)     | Classify inquiries, answer FAQs (RAG), create tickets, escalate urgent issues        | 4 (Classifier → FAQ / Ticket / Escalation) | 47    |
-| [💼 Subsidy Consultant](templates/subsidy-consultant/) | Match Japanese SME grants, draft applications, score proposals, summarize guidelines | 4 (Matcher / Writer / Scorer / Summarizer) | 29    |
+| Template                                                  | Description                                                                          | Agents                                               | Tests |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- | ----- |
+| [🤖 Customer Support](templates/customer-support/)        | Classify inquiries, answer FAQs (RAG), create tickets, escalate urgent issues        | 4 (Classifier → FAQ / Ticket / Escalation)           | 47    |
+| [💼 Subsidy Consultant](templates/subsidy-consultant/)    | Match Japanese SME grants, draft applications, score proposals, summarize guidelines | 4 (Matcher / Writer / Scorer / Summarizer)           | 29    |
 | [🛒 E-commerce Assistant](templates/ecommerce-assistant/) | Search products, track orders, handle returns, recommend items                       | 5 (Classifier → Search / Order / Return / Recommend) | 62    |
-| ⚖️ Legal Document Analyzer                             | _Coming soon_                                                                        | —                                          | —     |
-| 📊 Sales Lead Qualifier                                | _Coming soon_                                                                        | —                                          | —     |
+| [⚖️ Legal Document Analyzer](templates/legal-document-analyzer/) | Extract clauses, analyze risks, summarize contracts, compare documents              | 5 (Classifier → Clause / Risk / Summary / Compare)   | 66    |
+| 📊 Sales Lead Qualifier                                   | _Coming soon_                                                                        | —                                                    | —     |
 
 ## Quick Start
 
