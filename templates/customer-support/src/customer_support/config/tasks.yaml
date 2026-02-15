@@ -1,0 +1,60 @@
+classify_inquiry:
+  description: >
+    Analyze the following customer inquiry and classify it into exactly
+    one category. Consider the urgency, complexity, and type of issue.
+
+    Customer inquiry: "{query}"
+
+    Categories:
+    - faq: Common questions that can be answered from the knowledge base
+    - ticket: Issues that need tracking, investigation, or follow-up
+    - escalation: Urgent issues, security concerns, or complex problems
+      requiring immediate human attention
+  expected_output: >
+    Respond with exactly one word: faq, ticket, or escalation
+  agent: classifier
+
+answer_faq:
+  description: >
+    Answer the following customer question using the knowledge base.
+    Be helpful, concise, and friendly. If you cannot find the answer
+    in the knowledge base, say so honestly.
+
+    Customer question: "{query}"
+  expected_output: >
+    A clear, helpful answer in 2-4 sentences. Include relevant links
+    or references from the knowledge base if available.
+  agent: faq_specialist
+
+create_ticket:
+  description: >
+    Create a structured support ticket for the following customer issue.
+    Extract all relevant information and categorize appropriately.
+
+    Customer issue: "{query}"
+  expected_output: >
+    A structured ticket in this format:
+    **Priority**: [Low/Medium/High/Critical]
+    **Category**: [Billing/Technical/Account/Feature Request/Bug]
+    **Summary**: [One-line summary]
+    **Description**: [Detailed description]
+    **Steps to Reproduce**: [If applicable]
+    **Recommended Action**: [Suggested next steps for the support team]
+  agent: ticket_handler
+
+prepare_escalation:
+  description: >
+    Prepare an escalation report for the following urgent customer issue.
+    Assess severity, potential business impact, and recommend immediate actions.
+
+    Customer issue: "{query}"
+  expected_output: >
+    An escalation report in this format:
+    **Severity**: [P1-Critical/P2-High/P3-Medium]
+    **Business Impact**: [Description of potential impact]
+    **Customer Sentiment**: [Frustrated/Angry/Concerned/Neutral]
+    **Issue Summary**: [Concise summary]
+    **Root Cause Hypothesis**: [If identifiable]
+    **Immediate Actions Required**: [List of actions]
+    **Recommended Resolution Timeline**: [Hours/Days]
+  agent: escalation_manager
