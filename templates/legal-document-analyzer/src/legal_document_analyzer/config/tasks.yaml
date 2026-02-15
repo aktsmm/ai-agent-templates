@@ -1,0 +1,110 @@
+classify_request:
+  description: >
+    Analyze the following legal document analysis request and classify it
+    into exactly one category. Consider what the user is trying to accomplish.
+
+    User request: "{query}"
+
+    Categories:
+    - clause_extraction: Extract specific clauses, find provisions, locate
+      terms like indemnification, termination, non-compete, IP assignment
+    - risk_analysis: Identify legal risks, assess unfavorable terms, flag
+      liabilities, evaluate compliance concerns
+    - summarization: Summarize the document, provide an overview, highlight
+      key terms and obligations
+    - comparison: Compare documents, find differences between versions,
+      identify missing or changed clauses
+  expected_output: >
+    Respond with exactly one word: clause_extraction, risk_analysis,
+    summarization, or comparison
+
+extract_clauses:
+  description: >
+    Extract the relevant clauses from the legal document based on
+    the user's request. Identify the clause type, quote the exact
+    language, and note the section reference.
+
+    User request: "{query}"
+  expected_output: >
+    A structured clause extraction report:
+    **Clauses Found**: [number]
+
+    For each clause:
+    - **Type**: [Clause type, e.g., Indemnification, Termination]
+    - **Section**: [Section number/reference]
+    - **Language**: [Exact quoted text from the document]
+    - **Key Terms**: [Notable conditions, triggers, or limitations]
+    - **Cross-References**: [Related sections, if any]
+
+    **Summary**: Brief overview of how these clauses work together.
+
+analyze_risks:
+  description: >
+    Analyze the legal document for risks, unfavorable terms, and
+    compliance concerns based on the user's request. Assess each
+    risk's severity and provide mitigation recommendations.
+
+    User request: "{query}"
+  expected_output: >
+    A structured risk assessment report:
+    **Overall Risk Level**: [High / Medium / Low]
+    **Risks Identified**: [number]
+
+    For each risk:
+    - **Risk**: [Brief description]
+    - **Severity**: [High / Medium / Low]
+    - **Section**: [Where in the document]
+    - **Impact**: [Potential consequence]
+    - **Recommendation**: [Suggested action or negotiation point]
+
+    **Missing Protections**: [Standard clauses not found in the document]
+    **Priority Actions**: [Top 3 items to address first]
+
+summarize_document:
+  description: >
+    Create a comprehensive yet concise summary of the legal document
+    based on the user's request. Capture all material terms and
+    present them in a business-friendly format.
+
+    User request: "{query}"
+  expected_output: >
+    A structured document summary:
+    **Document Type**: [e.g., NDA, Service Agreement, Employment Contract]
+    **Parties**: [Names and roles of the parties involved]
+    **Effective Date**: [Start date or execution date]
+    **Term**: [Duration and renewal terms]
+
+    **Key Terms**:
+    - **Scope**: [What the agreement covers]
+    - **Obligations**: [Key duties of each party]
+    - **Financial Terms**: [Fees, payment terms, penalties]
+    - **Confidentiality**: [Scope and duration of confidentiality]
+    - **Termination**: [How and when it can be terminated]
+    - **Liability**: [Caps, limitations, indemnification]
+
+    **Important Dates & Deadlines**: [List of time-sensitive items]
+    **Notable Provisions**: [Unusual or noteworthy terms]
+
+compare_documents:
+  description: >
+    Compare the referenced legal documents and identify material
+    differences based on the user's request. Highlight changes
+    that affect rights, obligations, or risk.
+
+    User request: "{query}"
+  expected_output: >
+    A structured comparison report:
+    **Documents Compared**: [Names/versions of the documents]
+    **Material Differences**: [number]
+
+    For each difference:
+    - **Section**: [Section reference]
+    - **Topic**: [What the clause addresses]
+    - **Document A**: [Language in first document]
+    - **Document B**: [Language in second document]
+    - **Impact**: [How this change affects rights/obligations]
+    - **Significance**: [High / Medium / Low]
+
+    **Added Clauses**: [Clauses present in one but not the other]
+    **Removed Clauses**: [Clauses removed between versions]
+    **Recommendation**: [Which version is more favorable, with reasoning]
