@@ -4,7 +4,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-47%20passed-brightgreen.svg)](#testing)
 
 ## Features
@@ -146,7 +146,7 @@ def search_tickets(query: str) -> str:
 customer-support-agent-template/
 +-- .env.example            # Environment config template
 +-- pyproject.toml           # Dependencies & project metadata
-+-- LICENSE                  # MIT License
++-- LICENSE                  # Apache 2.0 License
 +-- README.md
 +-- src/
 |   +-- customer_support/
@@ -223,7 +223,7 @@ pytest -v
 
 ## License
 
-MIT - See [LICENSE](LICENSE) for details.
+Apache 2.0 - See [LICENSE](LICENSE) for details.
 
 ## More Templates
 

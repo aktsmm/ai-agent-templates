@@ -6,7 +6,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](#testing)
 
 ## Features
@@ -27,22 +27,22 @@ Analysis Request → Classifier Agent → [Clause Extraction / Risk Analysis / S
 
 ### Agent Roles
 
-| Agent               | Role                                                   | Tools                                            |
-| ------------------- | ------------------------------------------------------ | ------------------------------------------------ |
-| **Classifier**      | Routes requests to the right specialist                | —                                                |
-| **Clause Extractor**| Finds and presents specific contract clauses           | `search_document_clauses`, `get_document_sections` |
-| **Risk Analyzer**   | Identifies legal risks and unfavorable terms           | `search_document_clauses`, `get_document_sections` |
-| **Summarizer**      | Creates concise, business-friendly summaries           | `search_document_clauses`, `get_document_sections` |
-| **Comparator**      | Compares documents and finds material differences      | `compare_document_sections`, `get_document_sections` |
+| Agent                | Role                                              | Tools                                                |
+| -------------------- | ------------------------------------------------- | ---------------------------------------------------- |
+| **Classifier**       | Routes requests to the right specialist           | —                                                    |
+| **Clause Extractor** | Finds and presents specific contract clauses      | `search_document_clauses`, `get_document_sections`   |
+| **Risk Analyzer**    | Identifies legal risks and unfavorable terms      | `search_document_clauses`, `get_document_sections`   |
+| **Summarizer**       | Creates concise, business-friendly summaries      | `search_document_clauses`, `get_document_sections`   |
+| **Comparator**       | Compares documents and finds material differences | `compare_document_sections`, `get_document_sections` |
 
 ### Categories
 
-| Category           | Trigger Examples                                                   |
-| ------------------ | ------------------------------------------------------------------ |
-| `clause_extraction`| "Find the indemnification clause", "Extract termination provisions"|
-| `risk_analysis`    | "What are the risks?", "Flag unfavorable terms"                    |
-| `summarization`    | "Summarize this NDA", "Give me an overview of the contract"        |
-| `comparison`       | "Compare these two agreements", "What changed between versions?"   |
+| Category            | Trigger Examples                                                    |
+| ------------------- | ------------------------------------------------------------------- |
+| `clause_extraction` | "Find the indemnification clause", "Extract termination provisions" |
+| `risk_analysis`     | "What are the risks?", "Flag unfavorable terms"                     |
+| `summarization`     | "Summarize this NDA", "Give me an overview of the contract"         |
+| `comparison`        | "Compare these two agreements", "What changed between versions?"    |
 
 ## Quick Start
 
@@ -122,9 +122,11 @@ legal-document-analyzer/
 ## Sample Documents Included
 
 ### NDA Template (`nda_template.md`)
+
 A mutual Non-Disclosure Agreement with 15 sections including definitions, obligations, exclusions, term, remedies, indemnification, limitation of liability, and governing law.
 
 ### Software License Agreement (`software_license.md`)
+
 An enterprise software license agreement with 15 sections covering license grant, restrictions, fees, IP, warranties, liability, support, and data protection.
 
 ## Testing
@@ -149,9 +151,11 @@ Drop Markdown files into `knowledge/`. The tools automatically discover and inde
 # My Contract Title
 
 ## 1. Definitions
+
 ...
 
 ## 2. Obligations
+
 ...
 ```
 
@@ -173,4 +177,4 @@ Extend the tools to handle PDF input:
 
 ## License
 
-[MIT](LICENSE)
+[Apache 2.0](LICENSE)

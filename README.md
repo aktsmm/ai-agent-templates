@@ -5,7 +5,7 @@
 [![CI](https://github.com/aktsmm/ai-agent-templates/actions/workflows/ci.yml/badge.svg)](https://github.com/aktsmm/ai-agent-templates/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-204%20passed-brightgreen.svg)](#testing)
 
 ## Why?
@@ -21,13 +21,13 @@ AI agent frameworks are powerful — but going from "hello world" to production 
 
 ## Templates
 
-| Template                                                  | Description                                                                          | Agents                                               | Tests |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- | ----- |
-| [🤖 Customer Support](templates/customer-support/)        | Classify inquiries, answer FAQs (RAG), create tickets, escalate urgent issues        | 4 (Classifier → FAQ / Ticket / Escalation)           | 47    |
-| [💼 Subsidy Consultant](templates/subsidy-consultant/)    | Match Japanese SME grants, draft applications, score proposals, summarize guidelines | 4 (Matcher / Writer / Scorer / Summarizer)           | 29    |
-| [🛒 E-commerce Assistant](templates/ecommerce-assistant/) | Search products, track orders, handle returns, recommend items                       | 5 (Classifier → Search / Order / Return / Recommend) | 62    |
-| [⚖️ Legal Document Analyzer](templates/legal-document-analyzer/) | Extract clauses, analyze risks, summarize contracts, compare documents              | 5 (Classifier → Clause / Risk / Summary / Compare)   | 66    |
-| 📊 Sales Lead Qualifier                                   | _Coming soon_                                                                        | —                                                    | —     |
+| Template                                                         | Description                                                                          | Agents                                               | Tests |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- | ----- |
+| [🤖 Customer Support](templates/customer-support/)               | Classify inquiries, answer FAQs (RAG), create tickets, escalate urgent issues        | 4 (Classifier → FAQ / Ticket / Escalation)           | 47    |
+| [💼 Subsidy Consultant](templates/subsidy-consultant/)           | Match Japanese SME grants, draft applications, score proposals, summarize guidelines | 4 (Matcher / Writer / Scorer / Summarizer)           | 29    |
+| [🛒 E-commerce Assistant](templates/ecommerce-assistant/)        | Search products, track orders, handle returns, recommend items                       | 5 (Classifier → Search / Order / Return / Recommend) | 62    |
+| [⚖️ Legal Document Analyzer](templates/legal-document-analyzer/) | Extract clauses, analyze risks, summarize contracts, compare documents               | 5 (Classifier → Clause / Risk / Summary / Compare)   | 66    |
+| 📊 Sales Lead Qualifier                                          | _Coming soon_                                                                        | —                                                    | —     |
 
 ## Quick Start
 
@@ -88,7 +88,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-MIT — See individual template LICENSE files for details.
+Apache 2.0 — See individual template LICENSE files for details.
 
 ---
 

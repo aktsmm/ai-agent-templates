@@ -8,6 +8,7 @@
 ## 1. Definitions
 
 **"Confidential Information"** means any and all non-public information, whether in oral, written, electronic, or other form, disclosed by one party to the other, including but not limited to:
+
 - Trade secrets, inventions, and patent applications
 - Business plans, strategies, and financial information
 - Customer lists, supplier information, and pricing data

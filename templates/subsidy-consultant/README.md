@@ -5,7 +5,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
 [![Azure OpenAI](https://img.shields.io/badge/Azure%20OpenAI-gpt--4o-0078D4.svg)](https://azure.microsoft.com/products/ai-services/openai-service)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-29%20passed-brightgreen.svg)](#testing)
 
 ## Features
@@ -183,7 +183,7 @@ pytest -v
 
 ## License
 
-MIT - See [LICENSE](LICENSE) for details.
+Apache 2.0 - See [LICENSE](LICENSE) for details.
 
 ---
 
