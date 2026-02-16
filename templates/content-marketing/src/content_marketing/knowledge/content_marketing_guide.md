@@ -11,12 +11,14 @@
 Every successful content program is built on 3-5 **content pillars** — broad themes that align with your brand expertise and audience interests.
 
 **How to define content pillars:**
+
 1. List your core products/services and unique expertise areas
 2. Research what your audience searches for and cares about
 3. Identify the intersection of your expertise and audience needs
 4. Validate with keyword volume and competitor analysis
 
 **Example pillars for a SaaS company:**
+
 - AI & Automation (thought leadership)
 - Customer Success Stories (social proof)
 - Industry Trends & Analysis (authority)
@@ -28,15 +30,16 @@ Every successful content program is built on 3-5 **content pillars** — broad t
 An editorial calendar ensures consistent publishing and strategic content distribution.
 
 **Weekly cadence (recommended starting point):**
-| Day       | Content Type              | Channel           |
+| Day | Content Type | Channel |
 |-----------|---------------------------|--------------------|
-| Monday    | Blog post                 | Blog, LinkedIn     |
-| Tuesday   | Social media carousel     | LinkedIn, Instagram|
-| Wednesday | Email newsletter          | Email              |
-| Thursday  | Short-form social content | Twitter/X, Instagram|
-| Friday    | Video or infographic      | YouTube, LinkedIn  |
+| Monday | Blog post | Blog, LinkedIn |
+| Tuesday | Social media carousel | LinkedIn, Instagram|
+| Wednesday | Email newsletter | Email |
+| Thursday | Short-form social content | Twitter/X, Instagram|
+| Friday | Video or infographic | YouTube, LinkedIn |
 
 **Planning best practices:**
+
 - Plan content 4-6 weeks in advance
 - Leave 20% capacity for reactive/trending content
 - Batch similar content types for production efficiency
@@ -48,6 +51,7 @@ An editorial calendar ensures consistent publishing and strategic content distri
 Build detailed personas to guide content creation:
 
 **Template:**
+
 - **Name**: Marketing Manager Maria
 - **Demographics**: 30-45, B2B SaaS companies, 50-500 employees
 - **Goals**: Increase lead generation, prove marketing ROI
@@ -100,17 +104,18 @@ A well-structured blog post improves readability and SEO:
 ### Blog Writing Guidelines
 
 **Word count recommendations by content type:**
-| Content Type          | Ideal Length      | Purpose                |
+| Content Type | Ideal Length | Purpose |
 |-----------------------|-------------------|------------------------|
-| News/Update           | 600-800 words     | Timeliness             |
-| How-To Guide          | 1,500-2,500 words | Utility, SEO           |
-| Listicle              | 1,200-2,000 words | Shareability           |
-| Thought Leadership    | 1,000-1,800 words | Authority              |
-| Case Study            | 1,200-2,000 words | Social proof           |
-| Ultimate Guide        | 3,000-5,000 words | SEO, authority         |
-| Product Comparison    | 2,000-3,000 words | Commercial intent      |
+| News/Update | 600-800 words | Timeliness |
+| How-To Guide | 1,500-2,500 words | Utility, SEO |
+| Listicle | 1,200-2,000 words | Shareability |
+| Thought Leadership | 1,000-1,800 words | Authority |
+| Case Study | 1,200-2,000 words | Social proof |
+| Ultimate Guide | 3,000-5,000 words | SEO, authority |
+| Product Comparison | 2,000-3,000 words | Commercial intent |
 
 **Writing best practices:**
+
 - Write at an 8th-grade reading level for general audiences
 - Use active voice (aim for 90%+ active sentences)
 - Keep paragraphs to 3-4 sentences maximum
@@ -135,6 +140,7 @@ A well-structured blog post improves readability and SEO:
 ### Platform-Specific Best Practices
 
 #### LinkedIn
+
 - **Post length**: 1,300 characters max for optimal engagement
 - **Best content types**: Carousels (6.1% avg engagement), text posts with line breaks, polls
 - **Hashtags**: 3-5 relevant hashtags
@@ -143,6 +149,7 @@ A well-structured blog post improves readability and SEO:
 - **Tips**: Start with a hook line, use line breaks for readability, ask questions to drive comments
 
 #### Twitter/X
+
 - **Post length**: 280 characters (threads for longer content)
 - **Best content types**: Threads (3.5% engagement), quote tweets, polls
 - **Hashtags**: 1-2 per tweet
@@ -151,6 +158,7 @@ A well-structured blog post improves readability and SEO:
 - **Tips**: Lead with value, use threads for thought leadership, engage in replies
 
 #### Instagram
+
 - **Caption length**: 2,200 character max (first 125 visible without "more")
 - **Best content types**: Reels (5.2% engagement), carousels, Stories
 - **Hashtags**: 5-15 relevant hashtags (mix of broad and niche)
@@ -159,6 +167,7 @@ A well-structured blog post improves readability and SEO:
 - **Tips**: First line is the hook, use Reels for reach, Stories for engagement
 
 #### Facebook
+
 - **Post length**: 40-80 characters for highest engagement
 - **Best content types**: Video (native upload), link posts, live video
 - **Hashtags**: 1-2 maximum
@@ -169,6 +178,7 @@ A well-structured blog post improves readability and SEO:
 ### Social Media Content Calendar
 
 **Monthly planning template:**
+
 - Week 1: Educational content (how-to, tips, guides)
 - Week 2: Social proof (customer stories, testimonials, case studies)
 - Week 3: Engagement (polls, questions, behind-the-scenes)
@@ -177,6 +187,7 @@ A well-structured blog post improves readability and SEO:
 ### Hashtag Strategy
 
 **Hashtag tiers for maximum reach:**
+
 1. **Branded** (1-2): #YourBrand, #YourCampaign
 2. **Industry** (2-3): #ContentMarketing, #DigitalMarketing
 3. **Niche** (3-5): #B2BContent, #ContentStrategy, #SEOTips
@@ -195,12 +206,12 @@ A well-structured blog post improves readability and SEO:
 5. **Prioritize**: Focus on high-volume, low-competition opportunities first
 
 **Keyword intent classification:**
-| Intent          | Example                          | Content Type          |
+| Intent | Example | Content Type |
 |-----------------|----------------------------------|-----------------------|
-| Informational   | "what is content marketing"      | Blog post, guide      |
-| Navigational    | "HubSpot blog login"             | Landing page          |
-| Commercial      | "best content marketing tools"   | Comparison, listicle  |
-| Transactional   | "buy content marketing course"   | Product/pricing page  |
+| Informational | "what is content marketing" | Blog post, guide |
+| Navigational | "HubSpot blog login" | Landing page |
+| Commercial | "best content marketing tools" | Comparison, listicle |
+| Transactional | "buy content marketing course" | Product/pricing page |
 
 ### On-Page SEO Checklist
 
@@ -248,12 +259,14 @@ Find topics your competitors rank for that you don't:
 Track these metrics to measure content effectiveness:
 
 **Awareness metrics:**
+
 - Organic traffic (sessions, users)
 - Social media reach and impressions
 - Brand mention volume
 - Email subscriber growth
 
 **Engagement metrics:**
+
 - Time on page / Average session duration
 - Pages per session
 - Social engagement rate (likes, comments, shares)
@@ -261,12 +274,14 @@ Track these metrics to measure content effectiveness:
 - Bounce rate
 
 **Conversion metrics:**
+
 - Lead generation (form fills, downloads)
 - Email sign-ups from content
 - Content-attributed pipeline
 - Content-attributed revenue
 
 **SEO metrics:**
+
 - Keyword rankings (position changes)
 - Domain authority / Domain rating
 - Backlinks acquired
@@ -274,23 +289,25 @@ Track these metrics to measure content effectiveness:
 
 ### Reporting Cadence
 
-| Report Type     | Frequency  | Key Metrics                          |
-|-----------------|------------|--------------------------------------|
-| Content Scorecard| Weekly    | Posts published, traffic, engagement |
-| Channel Report  | Bi-weekly  | Per-channel performance vs goals     |
-| SEO Dashboard   | Monthly    | Rankings, organic traffic, backlinks |
-| Content ROI     | Quarterly  | Pipeline, revenue attribution, CAC   |
-| Strategy Review | Quarterly  | Pillar performance, audience growth  |
+| Report Type       | Frequency | Key Metrics                          |
+| ----------------- | --------- | ------------------------------------ |
+| Content Scorecard | Weekly    | Posts published, traffic, engagement |
+| Channel Report    | Bi-weekly | Per-channel performance vs goals     |
+| SEO Dashboard     | Monthly   | Rankings, organic traffic, backlinks |
+| Content ROI       | Quarterly | Pipeline, revenue attribution, CAC   |
+| Strategy Review   | Quarterly | Pillar performance, audience growth  |
 
 ### Content Performance Benchmarks
 
 **Blog benchmarks (B2B):**
+
 - Average time on page: 3-5 minutes
 - Bounce rate: 40-60%
 - Organic traffic share: 50-70% of total
 - Conversion rate: 2-5% (email sign-up), 1-3% (lead form)
 
 **Social media benchmarks:**
+
 - LinkedIn engagement rate: 2-4% (good), 4%+ (excellent)
 - Twitter engagement rate: 1-2% (good), 2%+ (excellent)
 - Instagram engagement rate: 3-5% (good), 5%+ (excellent)
@@ -301,27 +318,27 @@ Track these metrics to measure content effectiveness:
 
 ### Team Contacts
 
-| Role                    | Name           | Email                          | Responsibility                |
-|-------------------------|----------------|--------------------------------|-------------------------------|
-| VP of Marketing         | Sarah Chen      | sarah.chen@company.com         | Strategy approval, budget     |
-| Content Marketing Manager| Alex Rivera    | alex.rivera@company.com        | Editorial calendar, execution |
-| SEO Specialist          | Jordan Kim      | jordan.kim@company.com         | Keyword research, technical SEO|
-| Social Media Manager    | Taylor Morgan   | taylor.morgan@company.com      | Social publishing, community  |
-| Graphic Designer        | Jamie Park      | jamie.park@company.com         | Visual assets, brand guidelines|
-| Content Writer          | Casey Brown     | casey.brown@company.com        | Blog posts, copy              |
+| Role                      | Name          | Email                     | Responsibility                  |
+| ------------------------- | ------------- | ------------------------- | ------------------------------- |
+| VP of Marketing           | Sarah Chen    | sarah.chen@company.com    | Strategy approval, budget       |
+| Content Marketing Manager | Alex Rivera   | alex.rivera@company.com   | Editorial calendar, execution   |
+| SEO Specialist            | Jordan Kim    | jordan.kim@company.com    | Keyword research, technical SEO |
+| Social Media Manager      | Taylor Morgan | taylor.morgan@company.com | Social publishing, community    |
+| Graphic Designer          | Jamie Park    | jamie.park@company.com    | Visual assets, brand guidelines |
+| Content Writer            | Casey Brown   | casey.brown@company.com   | Blog posts, copy                |
 
 ### Tool Stack
 
-| Category       | Tool                  | Purpose                              |
-|----------------|-----------------------|--------------------------------------|
-| CMS            | WordPress / Contentful| Content publishing                   |
-| SEO            | Ahrefs / SEMrush      | Keyword research, rank tracking      |
-| Social         | Buffer / Hootsuite    | Social scheduling, analytics         |
-| Analytics      | Google Analytics 4    | Web traffic, behavior analysis       |
-| Email          | Mailchimp / HubSpot   | Newsletter, email campaigns          |
-| Design         | Canva / Figma         | Graphics, social visuals             |
-| Project Mgmt   | Asana / Monday.com   | Editorial calendar, task tracking    |
-| Writing        | Grammarly / Hemingway | Grammar, readability                 |
+| Category     | Tool                   | Purpose                           |
+| ------------ | ---------------------- | --------------------------------- |
+| CMS          | WordPress / Contentful | Content publishing                |
+| SEO          | Ahrefs / SEMrush       | Keyword research, rank tracking   |
+| Social       | Buffer / Hootsuite     | Social scheduling, analytics      |
+| Analytics    | Google Analytics 4     | Web traffic, behavior analysis    |
+| Email        | Mailchimp / HubSpot    | Newsletter, email campaigns       |
+| Design       | Canva / Figma          | Graphics, social visuals          |
+| Project Mgmt | Asana / Monday.com     | Editorial calendar, task tracking |
+| Writing      | Grammarly / Hemingway  | Grammar, readability              |
 
 ### Brand Guidelines Quick Reference
 

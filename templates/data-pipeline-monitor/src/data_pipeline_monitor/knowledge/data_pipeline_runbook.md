@@ -15,20 +15,21 @@ All pipeline operators and data engineers should be familiar with this document.
 
 **Key Metrics to Monitor**
 
-| Metric | Description | Target SLA |
-|--------|-------------|------------|
-| Execution Success Rate | Percentage of successful pipeline runs | > 99.5% |
-| Run Duration | Time to complete a pipeline run | Within 2x baseline |
-| Data Freshness | Time since last successful data load | Per schedule + 15min |
-| Rows Processed | Number of rows ingested per run | Within 10% of baseline |
-| Error Count | Number of errors per run | 0 for healthy pipelines |
-| Resource Utilization | CPU/memory usage during execution | < 80% capacity |
+| Metric                 | Description                            | Target SLA              |
+| ---------------------- | -------------------------------------- | ----------------------- |
+| Execution Success Rate | Percentage of successful pipeline runs | > 99.5%                 |
+| Run Duration           | Time to complete a pipeline run        | Within 2x baseline      |
+| Data Freshness         | Time since last successful data load   | Per schedule + 15min    |
+| Rows Processed         | Number of rows ingested per run        | Within 10% of baseline  |
+| Error Count            | Number of errors per run               | 0 for healthy pipelines |
+| Resource Utilization   | CPU/memory usage during execution      | < 80% capacity          |
 
 **Monitoring Dashboard**
 
 Access the pipeline monitoring dashboard at: `https://monitoring.internal/pipelines`
 
 Dashboard panels include:
+
 - Pipeline execution timeline (last 24h / 7d / 30d)
 - Success/failure heatmap by pipeline
 - Latency trend charts
@@ -59,6 +60,7 @@ Dashboard panels include:
 Symptoms: `ConnectionError`, `ConnectionRefused`, `TimeoutError` in pipeline logs.
 
 Troubleshooting steps:
+
 1. Verify source system is reachable: `ping <source_host>` or `telnet <host> <port>`
 2. Check network connectivity and firewall rules
 3. Verify database credentials are valid and not expired
@@ -67,6 +69,7 @@ Troubleshooting steps:
 6. Test with a simple query: `SELECT 1` from the source database
 
 Common root causes:
+
 - Source database restart or maintenance window
 - Expired service account credentials
 - Network partition or DNS resolution failure
@@ -77,6 +80,7 @@ Common root causes:
 Symptoms: `TimeoutError`, `StatementTimeout`, `QueryTimeout` in pipeline logs.
 
 Troubleshooting steps:
+
 1. Check if query execution plan has changed (run EXPLAIN ANALYZE)
 2. Look for table locks or long-running transactions blocking the pipeline
 3. Verify data volume — unexpected spikes can cause timeouts
@@ -89,6 +93,7 @@ Troubleshooting steps:
 Symptoms: `MemoryError`, `OOMKilled`, container restart with exit code 137.
 
 Troubleshooting steps:
+
 1. Check container/worker memory limits in orchestrator config
 2. Review data volume — OOM often correlates with data spikes
 3. Implement chunked processing: break large loads into smaller batches
@@ -101,6 +106,7 @@ Troubleshooting steps:
 Symptoms: `SchemaError`, `ColumnNotFound`, `TypeMismatch`, unexpected null values.
 
 Troubleshooting steps:
+
 1. Compare source schema with expected schema in pipeline config
 2. Check for recent DDL changes on the source system
 3. Review schema drift detection alerts
@@ -113,6 +119,7 @@ Troubleshooting steps:
 Symptoms: `PermissionDenied`, `AccessDenied`, `InsufficientPrivileges`.
 
 Troubleshooting steps:
+
 1. Verify service account has required permissions (SELECT, INSERT, etc.)
 2. Check if permissions were revoked during a security audit
 3. Review IAM roles and policies for cloud storage access
@@ -129,12 +136,14 @@ Troubleshooting steps:
 Completeness measures whether all expected data is present.
 
 Validation rules:
+
 - Row count should be within 10% of the previous run
 - Required columns must have < 1% null rate
 - All expected partitions must be present
 - Foreign key references must resolve to parent tables
 
 Remediation:
+
 - Investigate source system for missing data
 - Check ETL filters that may be excluding valid records
 - Verify incremental load watermarks are correct
@@ -145,11 +154,13 @@ Remediation:
 Freshness measures how recent the data is.
 
 Validation rules:
+
 - Timestamp of newest record should be within the SLA window
 - Pipeline last_run timestamp should be within schedule tolerance
 - No gaps in time-series data partitions
 
 Remediation:
+
 - Check if the pipeline is running on schedule
 - Investigate upstream delays or dependencies
 - Verify timezone handling in timestamp comparisons
@@ -160,12 +171,14 @@ Remediation:
 Accuracy measures whether data values are correct.
 
 Validation rules:
+
 - Numeric values within expected ranges (e.g., price > 0)
 - Categorical values match allowed value lists
 - Aggregates match source system totals (reconciliation)
 - Cross-field consistency checks (e.g., end_date >= start_date)
 
 Remediation:
+
 - Compare pipeline output with source system sample
 - Check transformation logic for calculation errors
 - Verify encoding/decoding for string fields
@@ -176,11 +189,13 @@ Remediation:
 Consistency ensures data agrees across systems and tables.
 
 Validation rules:
+
 - Same entity should have consistent values across tables
 - Aggregations at different granularities should reconcile
 - Historical data should not change unexpectedly (immutability)
 
 Remediation:
+
 - Identify the authoritative source for each data element
 - Add cross-table validation queries
 - Implement slowly changing dimension (SCD) tracking
@@ -191,11 +206,13 @@ Remediation:
 Uniqueness ensures no unintended duplicate records.
 
 Validation rules:
+
 - Primary key columns must be unique
 - Natural key combinations must be unique
 - Deduplication rate should be < 0.1% for clean datasets
 
 Remediation:
+
 - Add DISTINCT or GROUP BY to deduplication logic
 - Check for replay/reprocessing that may introduce duplicates
 - Verify idempotency of pipeline operations
@@ -207,31 +224,31 @@ Remediation:
 
 **Severity Levels**
 
-| Severity | Description | Response SLA | Examples |
-|----------|-------------|--------------|----------|
-| P1 - Critical | Data pipeline outage affecting production | 15 minutes | Complete pipeline failure, data loss risk |
-| P2 - High | Significant degradation or SLA breach | 1 hour | SLA missed, data quality below threshold |
-| P3 - Medium | Non-critical issue requiring attention | 4 hours | Performance degradation, schema drift detected |
-| P4 - Low | Informational or minor issue | Next business day | Warnings, capacity planning alerts |
+| Severity      | Description                               | Response SLA      | Examples                                       |
+| ------------- | ----------------------------------------- | ----------------- | ---------------------------------------------- |
+| P1 - Critical | Data pipeline outage affecting production | 15 minutes        | Complete pipeline failure, data loss risk      |
+| P2 - High     | Significant degradation or SLA breach     | 1 hour            | SLA missed, data quality below threshold       |
+| P3 - Medium   | Non-critical issue requiring attention    | 4 hours           | Performance degradation, schema drift detected |
+| P4 - Low      | Informational or minor issue              | Next business day | Warnings, capacity planning alerts             |
 
 **Notification Channels**
 
-| Channel | Used For | Configuration |
-|---------|----------|---------------|
-| PagerDuty | P1/P2 alerts, on-call rotation | Integration key in pipeline config |
-| Slack #data-alerts | All severity levels | Webhook URL in alert manager |
-| Email | P2/P3 daily digest | Distribution list: data-ops@company.com |
-| Microsoft Teams | P3/P4 notifications | Teams webhook connector |
+| Channel            | Used For                       | Configuration                           |
+| ------------------ | ------------------------------ | --------------------------------------- |
+| PagerDuty          | P1/P2 alerts, on-call rotation | Integration key in pipeline config      |
+| Slack #data-alerts | All severity levels            | Webhook URL in alert manager            |
+| Email              | P2/P3 daily digest             | Distribution list: data-ops@company.com |
+| Microsoft Teams    | P3/P4 notifications            | Teams webhook connector                 |
 
 **Escalation Matrix**
 
-| Time Elapsed | Action | Contact |
-|-------------|--------|---------|
-| 0 min | Auto-notify on-call engineer | PagerDuty rotation |
-| 15 min (P1) | Escalate to team lead | Data Engineering Manager |
-| 30 min (P1) | Escalate to director | VP of Data Platform |
-| 1 hour (P2) | Escalate to team lead | Data Engineering Manager |
-| 4 hours (P3) | Include in daily standup | Team triage |
+| Time Elapsed | Action                       | Contact                  |
+| ------------ | ---------------------------- | ------------------------ |
+| 0 min        | Auto-notify on-call engineer | PagerDuty rotation       |
+| 15 min (P1)  | Escalate to team lead        | Data Engineering Manager |
+| 30 min (P1)  | Escalate to director         | VP of Data Platform      |
+| 1 hour (P2)  | Escalate to team lead        | Data Engineering Manager |
+| 4 hours (P3) | Include in daily standup     | Team triage              |
 
 **Alert Configuration Best Practices**
 
@@ -317,30 +334,30 @@ For recovering missing or corrected data:
 
 **Source Systems**
 
-| System | Type | Connection Method | Refresh Frequency |
-|--------|------|-------------------|-------------------|
-| Salesforce | CRM | REST API / Bulk API | Hourly |
-| SAP | ERP | RFC / OData | Daily |
-| PostgreSQL | OLTP Database | JDBC / CDC | Every 15 minutes |
-| Google Analytics | Web Analytics | GA4 API | Daily |
-| Workday | HRIS | REST API | Weekly |
+| System           | Type          | Connection Method   | Refresh Frequency |
+| ---------------- | ------------- | ------------------- | ----------------- |
+| Salesforce       | CRM           | REST API / Bulk API | Hourly            |
+| SAP              | ERP           | RFC / OData         | Daily             |
+| PostgreSQL       | OLTP Database | JDBC / CDC          | Every 15 minutes  |
+| Google Analytics | Web Analytics | GA4 API             | Daily             |
+| Workday          | HRIS          | REST API            | Weekly            |
 
 **Destination Systems**
 
-| System | Type | Use Case |
-|--------|------|----------|
-| Snowflake | Cloud DWH | Analytics, reporting, ML features |
-| BigQuery | Cloud DWH | Marketing analytics, ad-hoc queries |
-| Redshift | Cloud DWH | Transaction analytics, dashboards |
-| Data Lake (S3/ADLS) | Object Storage | Raw data archive, ML training data |
+| System              | Type           | Use Case                            |
+| ------------------- | -------------- | ----------------------------------- |
+| Snowflake           | Cloud DWH      | Analytics, reporting, ML features   |
+| BigQuery            | Cloud DWH      | Marketing analytics, ad-hoc queries |
+| Redshift            | Cloud DWH      | Transaction analytics, dashboards   |
+| Data Lake (S3/ADLS) | Object Storage | Raw data archive, ML training data  |
 
 **Orchestration Tools**
 
-| Tool | Environment | Dashboard URL |
-|------|-------------|---------------|
-| Apache Airflow | Production | https://airflow.internal/home |
-| Dagster | Development | https://dagster.internal/runs |
-| Custom Scheduler | Legacy | https://scheduler.internal/jobs |
+| Tool             | Environment | Dashboard URL                   |
+| ---------------- | ----------- | ------------------------------- |
+| Apache Airflow   | Production  | https://airflow.internal/home   |
+| Dagster          | Development | https://dagster.internal/runs   |
+| Custom Scheduler | Legacy      | https://scheduler.internal/jobs |
 
 **Data Flow Architecture**
 

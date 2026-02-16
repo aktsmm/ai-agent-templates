@@ -4,22 +4,22 @@
 
 ## Features
 
-| Category | What it does |
-|----------|-------------|
-| 🔄 Pipeline Health | Monitor execution status, latency, throughput, scheduling |
-| 🔍 Data Quality | Check completeness, freshness, schema drift, anomalies |
-| 🔔 Alert Management | Configure alerts, routing, escalation, notifications |
-| 🔧 Recovery | Recommend retry strategies, rollback, backfill procedures |
+| Category            | What it does                                              |
+| ------------------- | --------------------------------------------------------- |
+| 🔄 Pipeline Health  | Monitor execution status, latency, throughput, scheduling |
+| 🔍 Data Quality     | Check completeness, freshness, schema drift, anomalies    |
+| 🔔 Alert Management | Configure alerts, routing, escalation, notifications      |
+| 🔧 Recovery         | Recommend retry strategies, rollback, backfill procedures |
 
 ## Agents
 
-| Agent | Role | Tools |
-|-------|------|-------|
-| Classifier | Routes requests to specialists | — |
-| Pipeline Health Checker | Execution status & performance | Pipeline Status, Runbook |
-| Data Quality Analyzer | Data quality metrics & issues | Data Metrics, Runbook |
-| Alert Manager | Alert configuration & escalation | Runbook |
-| Recovery Advisor | Recovery actions & remediation | Pipeline Status, Runbook |
+| Agent                   | Role                             | Tools                    |
+| ----------------------- | -------------------------------- | ------------------------ |
+| Classifier              | Routes requests to specialists   | —                        |
+| Pipeline Health Checker | Execution status & performance   | Pipeline Status, Runbook |
+| Data Quality Analyzer   | Data quality metrics & issues    | Data Metrics, Runbook    |
+| Alert Manager           | Alert configuration & escalation | Runbook                  |
+| Recovery Advisor        | Recovery actions & remediation   | Pipeline Status, Runbook |
 
 ## Quick Start
 

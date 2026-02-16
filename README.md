@@ -31,7 +31,7 @@ AI agent frameworks are powerful — but going from "hello world" to production 
 | [🖥️ IT Helpdesk](templates/it-helpdesk/)                         | Reset passwords, troubleshoot software, diagnose network, handle hardware issues     | 5 (Classifier → Password / Software / Network / Hardware) | 92    |
 | [👥 HR Onboarding](templates/hr-onboarding/)                     | Collect documents, set up IT accounts, schedule training, match buddies              | 5 (Classifier → Document / IT Setup / Training / Buddy)   | 104   |
 | [📝 Content Marketing](templates/content-marketing/)             | Plan content strategy, write blogs, create social media, analyze SEO                 | 5 (Classifier → Strategist / Writer / Social / SEO)       | 112   |
-| [🔄 Data Pipeline Monitor](templates/data-pipeline-monitor/)     | Monitor pipeline health, analyze data quality, manage alerts, advise recovery         | 5 (Classifier → Health / Quality / Alert / Recovery)      | 99    |
+| [🔄 Data Pipeline Monitor](templates/data-pipeline-monitor/)     | Monitor pipeline health, analyze data quality, manage alerts, advise recovery        | 5 (Classifier → Health / Quality / Alert / Recovery)      | 99    |
 
 ## Quick Start
 

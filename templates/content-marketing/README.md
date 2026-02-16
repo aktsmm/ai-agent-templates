@@ -4,22 +4,22 @@
 
 ## Features
 
-| Category               | What it does                                                        |
-| ---------------------- | ------------------------------------------------------------------- |
-| 📋 Content Strategy     | Plan editorial calendars, define content pillars, build personas     |
-| ✍️ Blog Writing         | Write blog outlines, articles, thought leadership, how-to guides    |
-| 📱 Social Media         | Create platform-specific posts, captions, hashtag strategies        |
-| 🔍 SEO Analysis         | Research keywords, audit on-page SEO, analyze search rankings       |
+| Category            | What it does                                                     |
+| ------------------- | ---------------------------------------------------------------- |
+| 📋 Content Strategy | Plan editorial calendars, define content pillars, build personas |
+| ✍️ Blog Writing     | Write blog outlines, articles, thought leadership, how-to guides |
+| 📱 Social Media     | Create platform-specific posts, captions, hashtag strategies     |
+| 🔍 SEO Analysis     | Research keywords, audit on-page SEO, analyze search rankings    |
 
 ## Agents
 
-| Agent               | Role                               | Tools                                    |
-| ------------------- | ---------------------------------- | ---------------------------------------- |
-| Classifier           | Routes requests to specialists     | —                                        |
-| Content Strategist   | Content planning & editorial       | Content Guide, Campaign, Performance     |
-| Blog Writer          | Blog post creation                 | Content Guide, Campaign                  |
-| Social Media Creator | Platform-specific content          | Content Guide, Performance               |
-| SEO Analyzer         | Keyword & search optimization      | Content Guide, Performance               |
+| Agent                | Role                           | Tools                                |
+| -------------------- | ------------------------------ | ------------------------------------ |
+| Classifier           | Routes requests to specialists | —                                    |
+| Content Strategist   | Content planning & editorial   | Content Guide, Campaign, Performance |
+| Blog Writer          | Blog post creation             | Content Guide, Campaign              |
+| Social Media Creator | Platform-specific content      | Content Guide, Performance           |
+| SEO Analyzer         | Keyword & search optimization  | Content Guide, Performance           |
 
 ## Quick Start
 
