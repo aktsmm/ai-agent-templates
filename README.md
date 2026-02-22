@@ -5,7 +5,7 @@
 [![CI](https://github.com/aktsmm/ai-agent-templates/actions/workflows/ci.yml/badge.svg)](https://github.com/aktsmm/ai-agent-templates/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.9%2B-green.svg)](https://github.com/crewAIInc/crewAI)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-684%20passed-brightgreen.svg)](#testing)
 
 ## Why?
@@ -96,7 +96,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-Apache 2.0 — See individual template LICENSE files for details.
+This repository is dual-licensed:
+
+- **Root (framework, docs, CI)**: [CC BY-NC-SA 4.0](LICENSE)
+- **Individual templates** (`templates/*/`): [Apache 2.0](templates/customer-support/LICENSE) — see each template's LICENSE file
 
 ---
 
