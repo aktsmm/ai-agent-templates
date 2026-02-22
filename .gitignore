@@ -15,3 +15,8 @@ Thumbs.db
 .pytest_cache/
 .ruff_cache/
 uv.lock
+
+# Copilot agent artifacts (keep local in public repos)
+/research/
+/.github/skills/
+/output_sessions/
